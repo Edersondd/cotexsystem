@@ -19,7 +19,7 @@
         rel="stylesheet">
 
     <!-- Nome da tela no navegador -->
-    <title>Cadastro de Cliente</title>
+    <title>Consulta de Cliente</title>
 </head>
 
 <body>
@@ -66,16 +66,16 @@
                 <h5 class="centralizar-titulos">Filmes</h5>
 
                 <li class="nav-item">
-                    <a class="nav-link active" href="/html/filme/cadastrar-filme.html">Cadastrar Filmes</a>
+                    <a class="nav-link active" href="html/filme/cadastrar-filme.html">Cadastrar Filmes</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/html/filme/listar-filme.html">Listar Filme</a>
+                    <a class="nav-link" href="html/filme/listar-filme.html">Listar Filme</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/html/filme/utilitario-filmes/consulta-filme-alteracao.html">Alterar Filme</a>
+                    <a class="nav-link" href="html/filme/alterar-filme.html">Alterar Filme</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/html/filme/utilitario-filmes/consulta-filme-exclusao.html">Excluir Filme</a>
+                    <a class="nav-link" href="html/filme/excluir-filme.html">Excluir Filme</a>
                 </li>
 
                 <!-- Linha para diferenciar modulos -->
@@ -85,16 +85,16 @@
                 <h5 class="centralizar-titulos">Pedidos</h5>
 
                 <li class="nav-item">
-                    <a class="nav-link active" href="html/pedido/cadastrar-pedido.html">Cadastrar Pedido</a>
+                    <a class="nav-link active" href="/html/pedido/cadastrar-pedido.html">Cadastrar Pedido</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="html/pedido/listar-pedido.html">Listar Pedido</a>
+                    <a class="nav-link" href="/html/pedido/listar-pedido.html">Listar Pedido</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="html/pedido/alterar-pedido.html">Alterar Pedido</a>
+                    <a class="nav-link" href="/html/cliente/utilitario-cliente/consulta-cliente-alteracao.html">Alterar Pedido</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="html/pedido/excluir-pedido.html">Excluir Pedido</a>
+                    <a class="nav-link" href="/html/cliente/utilitario-cliente/consulta-cliente-exclusao.html">Excluir Pedido</a>
                 </li>
             </ul>
         </nav>
@@ -102,13 +102,13 @@
 
     <!-- conteudo principal -->
     <div>
-        <h1>Cadastro de Cliente</h1>
+        <h1>Consultar Cliente</h1>
     </div>
 
     <!-- Campos de cadastro de cliente -->
     <div class="container">
         <div>
-            <div id="centralizacaoLabel"><label for="">Código do CLiente:</label></div>
+            <div id="centralizacaoLabel"><label for="">Código do Cliente:</label></div>
             <input type="number" placeholder="Digite um código para o cliente: (apenas números)">
 
             <div id="centralizacaoLabel"><label for="">Nome:</label></div>
@@ -116,21 +116,12 @@
 
             <div id="centralizacaoLabel"><label for="">CPF:</label></div>
             <input type="number" placeholder="Digite seu CPF: (apenas números)">
-
-            <div id="centralizacaoLabel"><label for="">Idade::</label></div>
-            <input type="number" placeholder="Digite sua idade: (apenas números)">
-
-            <div id="centralizacaoLabel"><label for="">E-mail:</label></div>
-            <input type="email" placeholder="Digite seu e-mail:">
-
-            <div id="centralizacaoLabel"><label for="">Telefone:</label></div>
-            <input type="number" placeholder="Digite seu telefone: (apenas números)">
         </div>
 
         <!-- Alinhamento dos botões de controle de tela -->
         <div id="alinhamento-botoes">
             <div>
-                <a href="/html/cliente/utilitario-cliente/cadastro-efetuado-cliente.html"><button type="submit" class="botoes">Salvar</button></a>
+                <a href="/html/cliente/excluir-cliente.html"><button type="submit" class="botoes">Consultar</button></a>
             </div>
 
             <div>
