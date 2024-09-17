@@ -1,50 +1,57 @@
 /* ESTILIZAÇÃO DE TAGS */
-*{
+* {
   padding: 0px;
   margin: 0px;
 }
+
 body {
-  background-color: #250000!important;
+  background-color: #250000 !important;
   background-size: cover;
   font-family: "Montserrat", sans-serif;
   line-height: 1.6;
-  padding-bottom: 50px; /* Adiciona espaço inferior para não sobrepor o rodapé */ 
+  padding-bottom: 50px;
+  /* Adiciona espaço inferior para não sobrepor o rodapé */
   top: 0;
   left: 0;
   width: 100%;
-  min-height: 130vh; /* Garante que o contêiner tenha pelo menos a altura da viewport */
-  background-position: center; /* Centraliza a imagem */
-  background-repeat: no-repeat; /* Impede que a imagem se repita */
-  z-index: -1; /* Garante que o fundo fique atrás do conteúdo principal */
+  min-height: 130vh;
+  /* Garante que o contêiner tenha pelo menos a altura da viewport */
+  background-position: center;
+  /* Centraliza a imagem */
+  background-repeat: no-repeat;
+  /* Impede que a imagem se repita */
+  z-index: -1;
+  /* Garante que o fundo fique atrás do conteúdo principal */
 }
 
-h1{
+h1 {
   padding: 20px;
   text-align: center;
   font-family: "Montserrat", sans-serif;
   font: bold;
   font-size: 80px !important;
-  color: #ffffff !important; /* Cor do texto base */
+  color: #ffffff !important;
+  /* Cor do texto base */
 }
 
 /* ESTILIZAÇÃO DE ID */
 
-#conteudo{
+#conteudo {
   margin-left: 250px;
   padding: 20px;
-  text-align: center; 
+  text-align: center;
 }
 
-#estilo-nome-menu{
-    padding-bottom: 20px;
+#estilo-nome-menu {
+  padding-bottom: 20px;
 }
 
-#alinhamento-vtrinhe{
+#alinhamento-vtrinhe {
   display: flex;
   justify-content: space-around;
 }
 
-#hr{
+#hr {
   color: white;
 }
 
@@ -54,32 +61,37 @@ h1{
 .sidebar {
   position: fixed;
   top: 0;
-  left: -250px; /* Inicialmente fora da tela */
+  left: -250px;
+  /* Inicialmente fora da tela */
   width: 250px;
-  height: 100vh; /* Altura da sidebar igual à altura da tela */
+  height: 100vh;
+  /* Altura da sidebar igual à altura da tela */
   background-color: #f8f8f8;
-  transition: left 0.3s ease; /* Transição suave para aparecer/desaparecer */
+  transition: left 0.3s ease;
+  /* Transição suave para aparecer/desaparecer */
   padding: 20px;
   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
-  overflow-y: auto; /* Adiciona a barra de rolagem vertical quando necessário */
-  z-index: 1000; /* Garante que a sidebar fique sobre o conteúdo */
-  }
+  overflow-y: auto;
+  /* Adiciona a barra de rolagem vertical quando necessário */
+  z-index: 1000;
+  /* Garante que a sidebar fique sobre o conteúdo */
+}
 
-  /* Quando a sidebar está visível */
-  .sidebar.visible {
+/* Quando a sidebar está visível */
+.sidebar.visible {
   left: 0;
-  }
-  
+}
 
-  .content {
-    margin-left: 250px; /* Deixa espaço para a sidebar */
-    padding: 20px;
-  }
+.content {
+  margin-left: 250px;
+  /* Deixa espaço para a sidebar */
+  padding: 20px;
+}
 
-  .nav-link{
-    text-decoration: none;
-    padding: 0px;
-  }
+.nav-link {
+  text-decoration: none;
+  padding: 0px;
+}
 
 .footer {
   position: fixed;
@@ -87,55 +99,54 @@ h1{
   height: 30px;
   width: 100%;
   background-color: #f8f8f8;
-  background-size: cover; /* Faz a imagem cobrir toda a área */
+  background-size: cover;
+  /* Faz a imagem cobrir toda a área */
   color: #000000;
   text-align: center;
   padding: 10px;
   font-size: 14px;
 }
 
-/* Estilos adicionais para criar uma repetição infinita */
-.animated-title span {
-  margin-right: 200px; /* Espaço entre as repetições do título */
-}
-
-.centralizar-titulos{
+.centralizar-titulos {
   font-family: "Montserrat", sans-serif;
   text-align: center;
   font: bold;
-  font-size: px;
-  color: #000000 !important; /* Cor do texto base */
-
+  font-size: 20px;
+  color: #000000 !important;
+  /* Cor do texto base */
 }
 
-.card{
+.card {
   border: solid 2px !important;
   border-color: #FFD700 !important;
-  
+
 }
 
-.card-body{
+.card-body {
   background-color: #250000;
-  color: #ffffff !important; /* Cor do texto base */
+  color: #ffffff !important;
+  /* Cor do texto base */
 }
 
-.title{
+.title {
   padding: 20px 0px 20px 0px;
   font-family: "Montserrat", sans-serif;
   text-align: center;
   font: bold;
   font-size: 40px;
-  color: #ffffff; /* Cor do texto base */
+  color: #ffffff;
+  /* Cor do texto base */
 }
 
 /* KEY FRAME para definição da animação */
 @keyframes moveTitles {
   0% {
-      transform: translateX(100%); /* Começa fora da tela à direita */
+    transform: translateX(100%);
+    /* Começa fora da tela à direita */
   }
+
   100% {
-      transform: translateX(-100%); /* Move para fora da tela à esquerda */
+    transform: translateX(-100%);
+    /* Move para fora da tela à esquerda */
   }
 }
-
-

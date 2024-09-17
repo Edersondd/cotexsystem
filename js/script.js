@@ -2,22 +2,22 @@
 // Mapeamento de nomes de páginas para os arquivos HTML correspondentes
  const pages = {
     // páginas de cliente
-    'cadastrar cliente': '../html/Cliente/cadastrar-cliente.html',
-    'alterar cliente': '../html/cliente/alterar-cliente.html',
-    'listar cliente': '../html/cliente/listar-cliente.html',
-    'excluir cliente': '../html/cliente/excluir-cliente.html',
+    'cadastrar cliente': 'html/Cliente/cadastrar-cliente.html',
+    'alterar cliente': 'html/cliente/alterar-cliente.html',
+    'listar cliente': 'html/cliente/listar-cliente.html',
+    'excluir cliente': 'html/cliente/excluir-cliente.html',
 
     // páginas de filmes
-    'cadastrar filme': '../html/filme/cadastrar-filme.html',
-    'alterar filme': '../html/filme/alterar-filme.html',
-    'listar filme': '../html/filme/listar-filme.html',
-    'excluir filme': '../html/filme/excluir-filme.html',
+    'cadastrar filme': 'html/filme/cadastrar-filme.html',
+    'alterar filme': 'html/filme/alterar-filme.html',
+    'listar filme': 'html/filme/listar-filme.html',
+    'excluir filme': 'html/filme/excluir-filme.html',
 
      // páginas de pedido
-    'cadastrar pedido': '../html/pedido/cadastrar-pedido.html',
-    'alterar pedido': '../html/pedido/alterar-pedido.html',
-    'listar pedido': '../html/pedido/listar-pedido.html',
-    'excluir pedido': '../html/pedido/excluir-pedido.html'
+    'cadastrar pedido': 'html/pedido/cadastrar-pedido.html',
+    'alterar pedido': 'html/pedido/alterar-pedido.html',
+    'listar pedido': 'html/pedido/listar-pedido.html',
+    'excluir pedido': 'html/pedido/excluir-pedido.html'
 };
 
 // Capturando o formulário e adicionando um evento de submissão
