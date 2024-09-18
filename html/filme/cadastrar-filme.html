@@ -19,7 +19,7 @@
         rel="stylesheet">
 
     <!-- Nome da tela no navegador -->
-    <title>Cadastro de Cliente</title>
+    <title>Cadastro de Filme</title>
 </head>
 
 <body>
@@ -85,16 +85,16 @@
                 <h5 class="centralizar-titulos">Pedidos</h5>
 
                 <li class="nav-item">
-                    <a class="nav-link active" href="html/pedido/cadastrar-pedido.html">Cadastrar Pedido</a>
+                    <a class="nav-link active" href="/html/pedido/cadastrar-pedido.html">Cadastrar Pedido</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="html/pedido/listar-pedido.html">Listar Pedido</a>
+                    <a class="nav-link" href="/html/pedido/listar-pedido.html">Listar Pedido</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="html/pedido/alterar-pedido.html">Alterar Pedido</a>
+                    <a class="nav-link" href="/html/pedido/utilitario-pedido/consulta-pedido-alteracao.html">Alterar Pedido</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="html/pedido/excluir-pedido.html">Excluir Pedido</a>
+                    <a class="nav-link" href="/html/pedido/utilitario-pedido/consulta-pedido-exclusao.html">Excluir Pedido</a>
                 </li>
             </ul>
         </nav>
@@ -102,29 +102,32 @@
 
     <!-- conteudo principal -->
     <div>
-        <h1>Cadastro de Cliente</h1>
+        <h1>Cadastro de Filme</h1>
     </div>
 
     <!-- Campos de cadastro de cliente -->
     <div class="container">
         <div>
-            <div id="centralizacaoLabel"><label for="">Código do CLiente:</label></div>
-            <input type="number" placeholder="Digite um código para o cliente: (apenas números)">
+            <div id="centralizacaoLabel"><label for="">Código do Filme:</label></div>
+            <input type="number" placeholder="Digite um código para o Filme: (apenas números)">
 
             <div id="centralizacaoLabel"><label for="">Nome:</label></div>
-            <input type="text" placeholder="Digite seu nome:">
+            <input type="text" placeholder="Digite o nome do filme:">
 
-            <div id="centralizacaoLabel"><label for="">CPF:</label></div>
-            <input type="number" placeholder="Digite seu CPF: (apenas números)">
+            <div id="centralizacaoLabel"><label for="">Gênero:</label></div>
+            <input type="number" placeholder="Digite o gênero do filme:">
 
-            <div id="centralizacaoLabel"><label for="">Idade::</label></div>
-            <input type="number" placeholder="Digite sua idade: (apenas números)">
+            <div id="centralizacaoLabel"><label for="">Descrição:</label></div>
+            <input type="number" placeholder="Digite uma descrição para o film:">
 
-            <div id="centralizacaoLabel"><label for="">E-mail:</label></div>
-            <input type="email" placeholder="Digite seu e-mail:">
+            <div id="centralizacaoLabel"><label for="">Diretor:</label></div>
+            <input type="email" placeholder="Digite o diretor do filme:">
 
-            <div id="centralizacaoLabel"><label for="">Telefone:</label></div>
-            <input type="number" placeholder="Digite seu telefone: (apenas números)">
+            <div id="centralizacaoLabel"><label for="">Valor de aluguel:</label></div>
+            <input type="number" placeholder="Digite o valor de aluguel:">
+
+            <div id="centralizacaoLabel"><label for="">Valor de custo:</label></div>
+            <input type="number" placeholder="Digite o valor de custo:">
         </div>
 
         <!-- Alinhamento dos botões de controle de tela -->

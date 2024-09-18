@@ -4,50 +4,146 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- COnexão com o arquivo css -->
     <link rel="stylesheet" href="/css/cadastros.css">
-    <link rel="shortcut icon" href="../img/logo bird.png" type="image/x-icon">
-        <!-- auxilio de caminho para o GitHUb -->
-        <base href="https://edersondd.github.io/cotexsystem/">
-    <title>Cadastro de Cliente</title>
+
+    <!-- Logo do sistema no favicon -->
+    <link rel="shortcut icon" href="/img/logo.png" type="image/x-icon">
+
+    <!-- Conexão para o Bootstrap CSS (via CDN) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Conexão com o google fontes -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Nome da tela no navegador -->
+    <title>Excluir Cliente</title>
 </head>
 
 <body>
-    <div id="titulo">
-        <img src="/images/logo.png" width="130" height="100" alt="">
-        <h1>Cadastro de Cliente</h1>
+
+    <!-- Barra lateral -->
+    <div class="sidebar" id="sidebar">
+
+        <h4 class="centralizar-titulos" id="estilo-nome-menu">Menu</h4>
+
+        <!-- Formulário de consulta -->
+        <form id="searchForm">
+            <div class="mb-3">
+                <input type="text" class="form-control" id="searchInput" placeholder="Digite a página">
+            </div>
+        </form>
+
+        <!-- Linha para diferenciar modulos -->
+        <hr>
+
+        <!-- Links de navegação do sistema -->
+        <nav>
+            <ul class="nav flex-column">
+
+                <!-- Navegação nas telas de cliente -->
+                <h5 class="centralizar-titulos">Clientes</h5>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/html/cliente/cadastrar-cliente.html">Cadastrar Cliente</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/html/cliente/listar-cliente.html">Listar Cliente</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/html/cliente/utilitario-cliente/consulta-cliente-alteracao.html">Alterar Cliente</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/html/cliente/utilitario-cliente/consulta-cliente-exclusao.html">Excluir Cliente</a>
+                </li>
+
+                <!-- Linha para diferenciar modulos -->
+                <hr>
+
+                <!-- Navegação nas telas de Filme -->
+                <h5 class="centralizar-titulos">Filmes</h5>
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="/html/filme/cadastrar-filme.html">Cadastrar Filmes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/html/filme/listar-filme.html">Listar Filme</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/html/filme/utilitario-filmes/consulta-filme-alteracao.html">Alterar Filme</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/html/filme/utilitario-filmes/consulta-filme-exclusao.html">Excluir Filme</a>
+                </li>
+
+                <!-- Linha para diferenciar modulos -->
+                <hr>
+
+                <!-- Navegação nas telas de pedido -->
+                <h5 class="centralizar-titulos">Pedidos</h5>
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="/html/pedido/cadastrar-pedido.html">Cadastrar Pedido</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/html/pedido/listar-pedido.html">Listar Pedido</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/html/pedido/utilitario-pedido/consulta-pedido-alteracao.html">Alterar Pedido</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/html/pedido/utilitario-pedido/consulta-pedido-exclusao.html">Excluir Pedido</a>
+                </li>
+            </ul>
+        </nav>
     </div>
 
-    <!-- CAMPOS DE CADASTRO DE CLIENTE -->
+    <!-- conteudo principal -->
+    <div>
+        <h1>Excluir Cliente</h1>
+    </div>
 
+    <!-- Campos de cadastro de cliente -->
     <div class="container">
         <div>
+            <div id="centralizacaoLabel"><label for="">Código do Filme:</label></div>
+            <input type="number" value="10" disabled>
+
             <div id="centralizacaoLabel"><label for="">Nome:</label></div>
-            <input type="text" placeholder="Digite seu nome:">
+            <input type="text" value="The Walking Dead" disabled>
 
-            <div id="centralizacaoLabel"><label for="">CPF:</label></div>
-            <input type="text" placeholder="Digite seu CPF:">
+            <div id="centralizacaoLabel"><label for="">Gênero:</label></div>
+            <input type="text" value="Terror"disabled >
 
-            <div id="centralizacaoLabel"><label for="">Salário:</label></div>
-            <input type="text" placeholder="Digite seu Salário:">
+            <div id="centralizacaoLabel"><label for="">Descrição:</label></div>
+            <input type="text" value="Baseado na história em quadrinhos escrita por Robert Kirkman, este drama potente e visceral retrata a vida nos Estados Unidos pós-apocalíptico." disabled>
 
-            <div id="centralizacaoLabel"><label for="">Altura:</label></div>
-            <input type="text" placeholder="Digite seu Altura:">
+            <div id="centralizacaoLabel"><label for="">Diretor:</label></div>
+            <input type="email" value="Scott M. Gimple" disabled>
 
-            <div id="centralizacaoLabel"><label for="">Peso:</label></div>
-            <input type="text" placeholder="Digite seu Peso:">
+            <div id="centralizacaoLabel"><label for="">Valor de aluguel:</label></div>
+            <input type="number" value="40" disabled>
+
+            <div id="centralizacaoLabel"><label for="">Valor de custo:</label></div>
+            <input type="number" value="20" disabled>
         </div>
 
-        <!-- ALINHAMENTO DOS BOTÕES DE CONTROLE DE TELA -->
-
+        <!-- Alinhamento dos botões de controle de tela -->
         <div id="alinhamento-botoes">
-            <div class="form-control">
-                <a href="../html/cadastroFeito.html"><button type="submit" class="botoes">Salvar</button></a>
+            <div>
+                <a href="/html/filme/utilitario-filmes/cadastro-excluido-filme.html"><button type="submit" class="botoes">Excluir</button></a>
             </div>
 
             <div>
-                <a href="index.html"><button type="button" class="botoes">Menu</button></a>
+                <a href="/index.html"><button type="button" class="botoes">Menu</button></a>
             </div>
         </div>
+
+        <!-- Conexão com o arquivo JavaScript -->
+        <script src="/js/script.js"></script>
+
     </div>
 </body>
 
